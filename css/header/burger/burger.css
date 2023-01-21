@@ -4,27 +4,30 @@
   font-size: 1.25rem;
   line-height: 1.5rem;
   background-color: inherit;
-  width: 40px;
-  height: 32px;
   position: relative;
   z-index: 100;
   display: flex;
+  width: 0;
   opacity: 0;
   visibility: hidden;
   margin-top: -100%;
   transition: 1s all ease;
   transform: rotate(0deg);
 }
-@media (max-width: 1090.98px) {
+@media (max-width: 991.98px) {
   .burger {
+    width: 2.5rem;
+    height: 2rem;
     opacity: 1;
     visibility: visible;
     margin-top: 0;
+    justify-content: flex-end;
   }
 }
 .burger__inner {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex: 1 1;
   transition: 1.5s all ease;
   z-index: 99;
@@ -54,8 +57,8 @@
 }
 
 .line {
-  height: 5px;
-  width: 40px;
+  height: 0.313rem;
+  width: 2.5rem;
   border-radius: 0.5rem;
   background-color: var(--brown);
   transition: 1s opacity, max-width ease;
@@ -63,8 +66,8 @@
 .line::before, .line::after {
   transform: rotate(0deg);
   content: "";
-  height: 5px;
-  width: 40px;
+  height: 0.313rem;
+  width: 2.5rem;
   border-radius: 0.5rem;
   background-color: var(--brown);
   position: absolute;
@@ -80,7 +83,7 @@
 .burger--active > .line::after {
   background-color: inherit;
   opacity: 0;
-  max-width: 40px;
+  max-width: 2.5rem;
   transform: rotate(-45deg);
   transition: var(--color-transt);
 }

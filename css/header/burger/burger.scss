@@ -4,12 +4,13 @@
     font-size: 1.25rem;
     line-height: 1.5rem;
     background-color: inherit;
-    width: 40px;
-    height: 32px;
+    // width: 2.5rem;
+    // height: 2rem;
     position: relative;
     z-index: 100;
     display: flex;
 
+    width: 0;
     opacity: 0;
     visibility: hidden;
     margin-top: -100%;
@@ -18,15 +19,20 @@
     transition: 1s all ease;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    @media(max-width:1090.98px){
 
+    @media(max-width:991.98px) {
+        width: 2.5rem;
+        height: 2rem;
         opacity: 1;
         visibility: visible;
         margin-top: 0;
+        justify-content: flex-end;
     }
+
     &__inner {
         display: flex;
         flex-direction: row;
+        align-items: center;
         flex: 1 1;
         transition: 1.5s all ease;
         z-index: 99;
@@ -45,6 +51,7 @@
             width: 100%;
 
             flex-flow: wrap;
+            
             background-color: white;
 
             margin-top: -200%;
@@ -60,8 +67,8 @@
 }
 
 .line {
-    height: 5px;
-    width: 40px;
+    height: 0.313rem;
+    width: 2.5rem;
     border-radius: 0.5rem;
     background-color: var(--brown);
     transition: 1s opacity, max-width ease;
@@ -69,10 +76,10 @@
     &::before,
     &::after {
         -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+        transform: rotate(0deg);
         content: '';
-        height: 5px;
-        width: 40px;
+        height: 0.313rem;
+        width: 2.5rem;
         border-radius: 0.5rem;
         background-color: var(--brown);
         position: absolute;
@@ -91,8 +98,7 @@
 .burger--active>.line::after {
     background-color: inherit;
     opacity: 0;
-    // width: 0;
-    max-width: 40px;
+    max-width: 2.5rem;
     transform: rotate(-45deg);
     transition: var(--color-transt);
 }
@@ -103,30 +109,10 @@
     transform: rotate(45deg);
     -webkit-transform-origin: 15% 15%;
     transform-origin: 15% 15%;
-
-//     -webkit-transform: rotate(45deg);
-//     transform: rotate(-45deg);
-// -webkit-transform-origin: 15% 95%;
-//     transform-origin: 15% 95%;
 }
 
 .burger--active>.line::before {
-//     -webkit-transform: rotate(45deg);
-//     transform: rotate(45deg);
-// -webkit-transform-origin: 15% 15%;
-//     transform-origin: 15% 15%;
-transition: var(--color-transt);
--webkit-transform: rotate(-95deg);
-transform: rotate(-95deg);
-// -webkit-transform-origin: 15% 95%;
-// transform-origin: 15% 95%;
-
-
-
-    // -webkit-transform: rotate(95deg);
-    // transform: rotate(95deg);
-    // transform-origin: 15% 15%;
-    // -webkit-transform-origin: 15% 15%;
-    // left: 16px;
-    // top: -11px;
+    transition: var(--color-transt);
+    -webkit-transform: rotate(-95deg);
+    transform: rotate(-95deg);
 }

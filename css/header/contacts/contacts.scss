@@ -1,13 +1,28 @@
 .contacts {
     flex: 1 1 max-content;
     display: flex;
+    align-items: center;
+
+    @media(max-width:991.98px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__list {
         display: flex;
         align-items: center;
         margin-right: 2.5rem;
-        @media(max-width:1090.98px){
-            margin-right: 1.2rem;
+
+        @media(max-width:1440.98px) {
+            margin-right: calc(0.5rem + (2.5 - 0.5) * ((100vw - 61.938rem) / 80));
+        }
+
+        @media(max-width:991.98px) {
+            margin-right: 0;
+            flex: 1 1 100%;
+            justify-content: center;
+            order: 2;
+            margin-top: 1rem;
         }
     }
 
@@ -38,17 +53,24 @@
     &__info {
         white-space: nowrap;
 
+        @media(max-width:991.98px) {
+            order: 1;
+        }
+
         &--phone {
-            >a{
+            >a {
                 font-family: "circle-extrabold", sans-serif;
                 font-size: 1.5rem;
                 line-height: 100%;
-                color:var(--brown);
+                color: var(--brown);
                 transition: var(--color-transt);
-                
-            &:hover{
-                color:var(--brown-hover)
-            }
+
+                &:hover {
+                    color: var(--brown-hover)
+                }
+                @media(max-width:991.98px){
+                    font-size: 2rem;
+                }
             }
 
         }

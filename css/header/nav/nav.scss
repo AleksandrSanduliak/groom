@@ -2,7 +2,7 @@
     flex: 1 1 100%;
     width: max-content;
     margin-right: 2.5rem;
-    @media(max-width:1090.98px){
+    @media(max-width:991.98px){
         margin-right: 1.2rem;
     }
 }
@@ -15,9 +15,16 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-size: 1.25rem; // 20px
         line-height: 150%;
         white-space: nowrap;
+        @media(max-width:991.98px){
+            font-size: 2rem;
+            flex: 1 1 max-content;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__link {
