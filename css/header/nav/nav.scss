@@ -1,0 +1,32 @@
+.nav {
+    flex: 1 1 100%;
+    width: max-content;
+    margin-right: 2.5rem;
+    @media(max-width:1090.98px){
+        margin-right: 1.2rem;
+    }
+}
+
+.ul {
+    display: flex;
+    align-self: center;
+   
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem; // 20px
+        line-height: 150%;
+        white-space: nowrap;
+    }
+
+    &__link {
+        
+        color: var(--brown);
+        transition: var(--color-transt);
+        &:hover,
+        &:active {
+            color: var(--brown-hover);
+        }
+    }
+}

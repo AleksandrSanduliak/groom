@@ -10,10 +10,49 @@
     <link href="../css/settings/normalize.css" rel="stylesheet">
     <link href="../css/settings/main.css" rel="stylesheet">
     <!-- SETTINGS -->
+
+    <!-- HEADER -->
+    <link rel="stylesheet" href="../css/header/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header/nav/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header/contacts/contacts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header/burger/burger.css" rel="stylesheet">
+    <!-- HEADER -->
 </head>
 
 <body>
-
+<header class="header">
+    <div class="header__container">
+        <div class="header__inner">
+            <img src="../imgs/logo.svg" alt="Логотип Bentley" class="header__logo">
+            <button class="burger" data-burger><span class="line"></span></button>
+            <div class="burger__inner" data-menu>
+                <nav class="nav">
+                <ul class="ul__list">
+                    <li data-menu-item class="ul__item"><a href="#" class="ul__link">Наши услуги</a></li>
+                    <li data-menu-item class="ul__item"><a href="#" class="ul__link">О компании</a></li>
+                    <li  data-menu-item class="ul__item"><a href="#" class="ul__link">Отзывы</a></li>
+                    <li data-menu-item class="ul__item"><a href="#" class="ul__link">Контакты</a></lidata-menu-item>
+                </ul>
+                </nav>
+                <div class="contacts">
+                <ul class="contacts__list">
+                    <li class="contacts__item"><a href="https://web.telegram.org/" class="contacts__link"><img style="margin-right: 0.125rem;" src="../imgs/header/contacts/tg.svg" alt="Иконка контактов" class="contacts__img"></a></li>
+                    <li class="contacts__item"><a href="https://www.whatsapp.com/" class="contacts__link"><img src="../imgs/header/contacts/whats.svg" alt="Иконка контактов" class="contacts__img"></a></li>
+                    <li class="contacts__item"><a href="https://vk.com/" class="contacts__link"><img src="../imgs/header/contacts/vk.svg" alt="Иконка контактов" class="contacts__img"></a></li>
+                </ul>
+                <div class="contacts__info">
+                    <p class="contacts__info--phone"><a href="tel:+79115015235" class="">+7 (911) 501-52-35</a></p>
+                    <p class="contacts__info--adress">г.Вологда, ул. Зосимовская, дом 30</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script type="module" src="../js/header/burger/burger.js"></script>
+<script type="module" src="../js/header/burger/disable-scroll.js"></script>
+<script type="module" src="../js/header/burger/enable-scroll.js"></script>
+<script type="module" src="../js/header/burger/vars.js"></script>
 </body>
 
 </html>

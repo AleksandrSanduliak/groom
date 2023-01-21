@@ -1,0 +1,58 @@
+.contacts {
+    flex: 1 1 max-content;
+    display: flex;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-right: 2.5rem;
+        @media(max-width:1090.98px){
+            margin-right: 1.2rem;
+        }
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: var(--brown);
+        border-radius: 1rem;
+        transition: var(--color-transt);
+
+        &:not(:last-child) {
+            margin-right: 0.938rem;
+        }
+
+        &:hover {
+            background-color: var(--brown-hover);
+        }
+    }
+
+    //adress + phone
+    &__info {
+        white-space: nowrap;
+
+        &--phone {
+            >a{
+                font-family: "circle-extrabold", sans-serif;
+                font-size: 1.5rem;
+                line-height: 100%;
+                color:var(--brown);
+                transition: var(--color-transt);
+                
+            &:hover{
+                color:var(--brown-hover)
+            }
+            }
+
+        }
+    }
+
+
+}

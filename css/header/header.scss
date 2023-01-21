@@ -1,0 +1,20 @@
+.header {
+    width: 100vw;
+    position: absolute;
+    padding-top: 1.25rem;
+
+    &__logo {
+        height: 6.25rem; //100px
+        width: 9.813rem; // 157px
+        margin-right: 2.5rem;
+        @media(max-width:1090.98px){
+            margin-right: 1.2rem;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

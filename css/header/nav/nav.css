@@ -1,0 +1,31 @@
+.nav {
+  flex: 1 1 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 2.5rem;
+}
+@media (max-width: 1090.98px) {
+  .nav {
+    margin-right: 1.2rem;
+  }
+}
+
+.ul {
+  display: flex;
+  align-self: center;
+}
+.ul__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  line-height: 150%;
+  white-space: nowrap;
+}
+.ul__link {
+  color: var(--brown);
+  transition: var(--color-transt);
+}
+.ul__link:hover, .ul__link:active {
+  color: var(--brown-hover);
+}/*# sourceMappingURL=nav.css.map */
