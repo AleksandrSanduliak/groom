@@ -1,0 +1,36 @@
+.slider {
+  font-family: "circle-regular";
+  flex: 1 1 100%;
+  overflow: hidden;
+}
+.slider__page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+.slider__page--text {
+  font-family: "circle-extrabold";
+  font-size: 2.625rem;
+  line-height: 120%;
+  color: var(--brown);
+  margin-bottom: 0.625rem;
+  max-width: 29.375rem;
+}
+.slider__page--subtext {
+  font-size: 1rem;
+  color: #240401;
+  opacity: 0.5;
+  margin-bottom: 2.5rem;
+  max-width: 29.375rem;
+}
+.slider__hero {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100%;
+}/*# sourceMappingURL=slider.css.map */

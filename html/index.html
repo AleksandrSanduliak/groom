@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Author: А.А Сандуляк,
-    Груминг услуги для ваших домашних животных, г.Вологда, 2023">
+    Груминг услуги для ваших домашних животных, г.Вологда, ул. Зосимовская, дом 30 2023">
     <title>Bentley - grooming studio</title>
     <!-- fonts -->
     <link rel="preload" href="../fonts/circle/Circe-Regular.woff2" as="font">
@@ -18,7 +18,10 @@
     <link href="../css/settings/normalize.css" rel="stylesheet">
     <link href="../css/settings/main.css" rel="stylesheet">
     <!-- SETTINGS -->
-
+    <!-- components -->
+    <link href="../css/components/btn/btn.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- components -->
     <!-- HEADER -->
     <link rel="stylesheet" href="../css/header/header.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/header/nav/nav.css" rel="stylesheet">
@@ -27,6 +30,7 @@
     <!-- HEADER -->
     <!-- MAIN -->
     <link rel="stylesheet" href="../css/main/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main/slider/slider.css" rel="stylesheet">
     <!-- MAIN -->
 </head>
 
@@ -63,7 +67,47 @@
 <main class="main">
     <div class="main__container">
         <div class="main__inner">
-            
+            <section class="slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__page ">
+                        <div class="slider__page--inner">
+                            <p class="slider__page--text">Первый СПА-салон<br>
+                                для любимых хвостиков</p>
+                                <p class="slider__page--subtext">Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. </p>
+                                <button class="btn" aria-label="Записаться"><a href="#" class="btn__link"><img src="../imgs/main/btn.svg" alt="img btn Записаться" class="btn__img">Записаться</a></button>
+                        </div>
+                        <img src="../imgs/main/hero.png" width="648px" height="817px" alt="Фото Героя" class="slider__hero">
+                    </div>
+                    <div class="swiper-slide slider__page ">
+                        <div class="slider__page--inner">
+                            <p class="slider__page--text">Первый СПА-салон<br>
+                                для любимых хвостиков</p>
+                                <p class="slider__page--subtext">Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. </p>
+                                <button class="btn" aria-label="Записаться"><a href="#" class="btn__link"><img src="../imgs/main/btn.svg" alt="img btn Записаться" class="btn__img">Записаться</a></button>
+                        </div>
+                        <img src="../imgs/main/hero.png"  width="648px" height="817px" alt="Фото Героя" class="slider__hero">
+                    </div>
+                    <div class="swiper-slide slider__page ">
+                        <div class="slider__page--inner">
+                            <p class="slider__page--text">Первый СПА-салон<br>
+                                для любимых хвостиков</p>
+                                <p class="slider__page--subtext">Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. </p>
+                                <button class="btn" aria-label="Записаться"><a href="#" class="btn__link"><img src="../imgs/main/btn.svg" alt="img btn Записаться" class="btn__img">Записаться</a></button>
+                        </div>
+                        <img src="../imgs/main/hero.png"  width="648px" height="817px" alt="Фото Героя" class="slider__hero">
+                    </div>
+                    <div class="swiper-slide slider__page ">
+                        <div class="slider__page--inner">
+                            <p class="slider__page--text">Первый СПА-салон<br>
+                                для любимых хвостиков</p>
+                                <p class="slider__page--subtext">Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. </p>
+                                <button class="btn" aria-label="Записаться"><a href="#" class="btn__link"><img src="../imgs/main/btn.svg" alt="img btn Записаться" class="btn__img">Записаться</a></button>
+                        </div>
+                        <img src="../imgs/main/hero.png"  width="648px" height="817px" alt="Фото Героя" class="slider__hero">
+                    
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </main>
@@ -73,6 +117,8 @@
 <script type="module" src="../js/header/burger/enable-scroll.js"></script>
 <script type="module" src="../js/header/burger/vars.js"></script>
 <!-- header -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="module" src="../js/main/swiper/swiper.js"></script>
 </body>
 
 </html>
