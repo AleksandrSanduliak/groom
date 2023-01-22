@@ -1,4 +1,9 @@
 .main {
-  padding-top: 9.456rem;
-  background-color: var(--main);
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 768.98px) {
+  .main {
+    background-position: center;
+  }
 }/*# sourceMappingURL=main.css.map */

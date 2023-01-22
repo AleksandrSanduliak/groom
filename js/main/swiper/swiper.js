@@ -1,7 +1,7 @@
-const swiper = new Swiper('.slider', {
+const swiper = new Swiper('.slider__container', {
     slidesPerView: 1,
-    speed: 500,
+    speed: 1500,
     autoplay: {
-        delay: 3000,
+        delay: 3500,
       },
 });

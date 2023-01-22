@@ -1,5 +1,18 @@
 .main{
-    // padding-top: 7.831rem;
-    padding-top: 9.456rem;
-    background-color: var(--main);
+
+    overflow: hidden;
+    position: relative;
+    // padding-top: 9.456rem;
+    // background-color: var(--main);
+    // @media(max-width:768.98px){
+    //     padding-top: calc(5rem + (9.456 - 5) * ((100vw - 20.061rem) / 80));
+    // }
+   
+
+    // @media(max-width:1024.98px){
+    //     background-position: calc(1rem + (17 - 1) * ((100vw - 20.061rem) / 80));;
+    // }
+    @media(max-width:768.98px){
+        background-position: center;
+    }
 }

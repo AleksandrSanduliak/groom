@@ -2,40 +2,143 @@
     font-family: "circle-regular";
     flex: 1 1 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 5;
+    margin-top: 7.7rem;
+    background-color: var(--main);
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    &__inner{
+        
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../../imgs/main/hero-bcg/eclipse-group.png);
+            background-repeat: no-repeat;
+            pointer-events: none;
+            background-position: center;
+            transition: 1s all ease;
+            z-index: 2;
+            @media(max-width:1440.98px){
+                background-position: right;
+    
+            }
+            @media(max-width:768.98px){
+                background-position-x: calc(-7rem + (5 - 1) * ((100vw - 20.061rem) / 80));
+                background-position-y: -0.5rem;
+            }
+        }
+    }
     &__page {
         display: flex;
         align-items: center;
-        // justify-content: space-between;
-        // flex: 1 0 auto;
-        &--inner{
-            // margin-right: 3rem;
-            margin-right: 10vw;
+        // overflow: hidden;
+
+        @media(max-width:768.98px) {
+            justify-content: flex-end;
         }
+
+        @media(max-width:450.98px) {
+            justify-content: center;
+        }
+
+        &--inner {
+            margin-right: 10vw;
+            position: relative;
+            z-index: 4;
+            // padding-left: 0.5rem;
+            @media(max-width: 991.98px) {
+                margin-right: 0;
+                max-width: 18rem;
+                // padding-left: 0;
+            }
+
+            @media(max-width: 768.98px) {
+                position: absolute;
+                left: 0;
+            }
+
+            @media(max-width: 650.98px) {
+                background-color: #fff;
+                padding-top: calc(1.375rem + (2 - 1.375) * ((100vw - 20.061rem) / 80));
+                padding-bottom: calc(1.375rem + (2 - 1.375) * ((100vw - 20.061rem) / 80));
+
+                padding-left: calc(1.375rem + (2.5 - 1.375) * ((100vw - 20.061rem) / 80));
+                padding-right: calc(1.375rem + (2.5 - 1.375) * ((100vw - 20.061rem) / 80));
+                // padding: 2rem 2.5rem;
+                border-radius: 1rem;
+                max-width: 20rem;
+                bottom: 1rem;
+                left: 0;
+            }
+        }
+
         &--text {
             font-family: "circle-extrabold";
             font-size: 2.625rem;
             line-height: 120%;
-            color:var(--brown);
+            color: var(--brown);
             margin-bottom: 0.625rem;
             max-width: 29.375rem;
+
+            @media(max-width:1440.98px) {
+                font-size: calc(1.375rem + (2.625 - 1.375) * ((100vw - 20.061rem) / 80));
+            }
+
+            @media(max-width:450.98px) {
+                margin-bottom: 1.8rem;
+            }
         }
-        &--subtext{
+
+        &--subtext {
             font-size: 1rem;
             color: #240401;
             opacity: 0.5;
             margin-bottom: 2.5rem;
             max-width: 29.375rem;
+            transition: 1s all ease;
 
+            @media(max-width:1440.98px) {
+                font-size: calc(0.8rem + (1 - 0.8) * ((100vw - 20.061rem) / 80));
+                margin-bottom: calc(1rem + (2.5 - 1) * ((100vw - 20.061rem) / 80));
+            }
+
+            @media(max-width:450.98px) {
+                opacity: 0;
+                visibility: hidden;
+                font-size: 0;
+                margin: 0;
+            }
         }
     }
-    &__hero{
+
+    &__hero {
         display: flex;
         justify-self: flex-end;
         align-items: center;
+        background-image: url(../../../imgs/main/hero-bcg/main-eclipse.svg);
+        background-position-x: 0.5rem;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        position: relative;
+        z-index: 3;
+        
+        @media(max-width:1440.98px) {
+            object-fit: contain;
+            width: calc(21.875rem + (40.5 - 21.875) * ((100vw - 20.061rem) / 80));
+            height: calc(28.125rem + (51.063 - 28.125) * ((100vw - 20.061rem) / 80))
+        }
+
     }
 
 }
-.swiper{
+
+.swiper {
     width: 100vw;
     height: 100%;
 }

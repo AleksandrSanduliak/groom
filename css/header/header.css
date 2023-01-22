@@ -2,11 +2,14 @@
   width: 100vw;
   position: absolute;
   padding-top: 1.25rem;
+  background-color: var(--main);
 }
 .header__logo {
   height: 6.25rem;
   width: 9.813rem;
   margin-right: 2.5rem;
+  position: relative;
+  z-index: 5;
 }
 @media (max-width: 1440.98px) {
   .header__logo {
@@ -20,6 +23,11 @@
   .header__logo {
     width: 9.813rem;
     margin-right: 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .header__logo {
+    width: calc(6rem + 3.813 * (100vw - 20.061rem) / 80);
   }
 }
 .header__inner {
