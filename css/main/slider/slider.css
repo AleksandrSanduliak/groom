@@ -6,8 +6,9 @@
 .slider__page {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex: 1 0 auto;
+}
+.slider__page--inner {
+  margin-right: 10vw;
 }
 .slider__page--text {
   font-family: "circle-extrabold";
