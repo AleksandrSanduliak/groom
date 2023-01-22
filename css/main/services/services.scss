@@ -1,0 +1,101 @@
+.services {
+    padding-top: 2.5rem;
+    background-color: white;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+    }
+
+    &__title {
+        font-family: "circle-extrabold";
+        font-size: 2.625rem;
+        line-height: 120%;
+        color: var(--brown);
+        margin-bottom: 2.5rem;
+
+        @media(max-width:1440.98px) {
+            font-size: calc(1.375rem + (2.625 - 1.375) * ((100vw - 20.061rem) / 80));
+        }
+
+        @media(max-width:450.98px) {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // text-align: center;
+        width: 16.875rem;
+        height: 23.125rem;
+        margin-right: 1.9rem;
+        margin-bottom: 2.5rem;
+        flex: 0 1 16.875rem;
+
+        @media(max-width:1024.98px) {
+            // flex: 1 1 10.875rem;
+        }
+
+        @media(max-width:768.98px) {
+            margin-right: 0.525rem;
+            // width: calc(5rem + (12.875 - 5) * ((100vw - 20.061rem) / 80)) !important;
+            // width: 12.875rem;
+            // height: 16.125rem;
+        }
+
+    }
+
+    &__top {
+        width: 16.875rem;
+        height: 16.875rem;
+        // background-color: var(--main);
+        position: relative;
+        margin-bottom: 0.9rem;
+        border-radius: 1.125rem;
+        transition: 0.7s all ease;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../../imgs/main/services/bcgg.png);
+        background-color: var(--main);
+
+        &:hover {
+            background-image: url(../../../imgs/main/services/bcg_hover.png);
+            background-color: var(--brown);
+        }
+
+        &--img {
+            width: 240px;
+            height: 263px;
+            @media(max-width:1024.98px){
+                margin-top: auto;
+                transform: scale(0.7);
+            }
+        }
+        @media(max-width:1024.98px){
+            // width: calc(14rem + (16.875 - 14) * ((100vw - 20.061rem) / 80));
+        }
+    }
+
+    &__bottom {
+        padding-left: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 150%;
+        color: var(--black-color);
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+
+        &--price {
+            font-family: 'circle-extrabold';
+        }
+    }
+}
