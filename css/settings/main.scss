@@ -1,23 +1,27 @@
 @font-face {
     font-family: "circle-extralight";
-    src: local("NotoSans-Regular"), url("../../fonts/circle/Circe-Regular.woff2") format("woff2");
+    src: url("../../fonts/circle/Circe-Regular.woff2") format("woff2");
     font-weight: 400;
+    font-display: swap;
 }
 @font-face {
     font-family: "circle-regular";
-    src: local("NotoSans-Regular"), url("../../fonts/circle/Circe-Regular.woff2") format("woff2");
+    src:  url("../../fonts/circle/Circe-Regular.woff2") format("woff2");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "circle-bold";
-    src: local("NotoSans-Regular"), url("../../fonts/circle/Circe-Bold.woff2") format("woff2");
+    src:  url("../../fonts/circle/Circe-Bold.woff2") format("woff2");
     font-weight: 700;
+    font-display: swap;
 }
 @font-face {
     font-family: "circle-extrabold";
-    src: local("NotoSans-Regular"), url("../../fonts/circle/Circe-ExtraBold.woff2") format("woff2");
+    src: url("../../fonts/circle/Circe-ExtraBold.woff2") format("woff2");
     font-weight: 800;
+    font-display: swap;
 }
 *,
 *::after,
